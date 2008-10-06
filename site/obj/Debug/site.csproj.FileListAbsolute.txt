@@ -1,0 +1,6 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\bin\site.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\bin\site.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\bin\StructureMap.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\obj\Debug\site.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\MountaintopLab\site\obj\Debug\site.pdb

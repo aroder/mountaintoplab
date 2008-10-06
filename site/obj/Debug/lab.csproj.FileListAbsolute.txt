@@ -1,0 +1,6 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\bin\lab.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\bin\lab.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\obj\Debug\lab.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\obj\Debug\lab.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\fastlab\lab\bin\StructureMap.dll

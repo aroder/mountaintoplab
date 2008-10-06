@@ -1,0 +1,372 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD5CD192-C186-4FC5-AB30-0E443E37194E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lab</RootNamespace>
+    <AssemblyName>lab</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StructureMap, Version=2.4.9.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\style1.css" />
+    <Content Include="styles\style10.css" />
+    <Content Include="styles\style11.css" />
+    <Content Include="styles\style12.css" />
+    <Content Include="styles\style2.css" />
+    <Content Include="styles\style3.css" />
+    <Content Include="styles\style4.css" />
+    <Content Include="styles\style5.css" />
+    <Content Include="styles\style6.css" />
+    <Content Include="styles\style7.css" />
+    <Content Include="styles\style8.css" />
+    <Content Include="styles\style9.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="domain\bootstrapper.cs" />
+    <Compile Include="domain\Constants.cs" />
+    <Compile Include="domain\interfaces\IProduct.cs" />
+    <Compile Include="domain\interfaces\IProductRepository.cs" />
+    <Compile Include="domain\Product.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_MasterSwitch.aspx.cs">
+      <DependentUpon>Default_MasterSwitch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_MasterSwitch.aspx.designer.cs">
+      <DependentUpon>Default_MasterSwitch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="domain\ZohoProductRepository.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master1.master.cs">
+      <DependentUpon>Master1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master1.master.designer.cs">
+      <DependentUpon>Master1.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master10.master.cs">
+      <DependentUpon>Master10.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master10.master.designer.cs">
+      <DependentUpon>Master10.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master11.master.cs">
+      <DependentUpon>Master11.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master11.master.designer.cs">
+      <DependentUpon>Master11.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master12.master.cs">
+      <DependentUpon>Master12.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master12.master.designer.cs">
+      <DependentUpon>Master12.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master2.master.cs">
+      <DependentUpon>Master2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master2.master.designer.cs">
+      <DependentUpon>Master2.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master3.master.cs">
+      <DependentUpon>Master3.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master3.master.designer.cs">
+      <DependentUpon>Master3.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master4.master.cs">
+      <DependentUpon>Master4.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master4.master.designer.cs">
+      <DependentUpon>Master4.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master5.master.cs">
+      <DependentUpon>Master5.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master5.master.designer.cs">
+      <DependentUpon>Master5.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master6.master.cs">
+      <DependentUpon>Master6.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master6.master.designer.cs">
+      <DependentUpon>Master6.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master7.master.cs">
+      <DependentUpon>Master7.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master7.master.designer.cs">
+      <DependentUpon>Master7.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master8.master.cs">
+      <DependentUpon>Master8.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master8.master.designer.cs">
+      <DependentUpon>Master8.master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\Master9.master.cs">
+      <DependentUpon>Master9.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\Master9.master.designer.cs">
+      <DependentUpon>Master9.master</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userControls\ContactUsForm.ascx.cs">
+      <DependentUpon>ContactUsForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\ContactUsForm.ascx.designer.cs">
+      <DependentUpon>ContactUsForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\ProductList.ascx.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControls\ProductList.ascx.designer.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\10\bg.gif" />
+    <Content Include="images\10\fade.gif" />
+    <Content Include="images\10\pic.jpg" />
+    <Content Include="images\10\strelica2.gif" />
+    <Content Include="images\11\body_bg.gif" />
+    <Content Include="images\11\head.jpg" />
+    <Content Include="images\11\input.gif" />
+    <Content Include="images\11\logininput.gif" />
+    <Content Include="images\11\logo.gif" />
+    <Content Include="images\11\logo32x32.gif" />
+    <Content Include="images\12\bg_body.gif" />
+    <Content Include="images\12\bg_container.gif" />
+    <Content Include="images\12\bg_footer.gif" />
+    <Content Include="images\12\bg_intro.jpg" />
+    <Content Include="images\12\bg_linkList.gif" />
+    <Content Include="images\12\bg_lresources.gif" />
+    <Content Include="images\12\bg_lselect.gif" />
+    <Content Include="images\12\bg_preamble.jpg" />
+    <Content Include="images\12\cont_img_01.jpg" />
+    <Content Include="images\12\cont_img_02.jpg" />
+    <Content Include="images\12\h1_larchives.gif" />
+    <Content Include="images\12\h1_lresources.gif" />
+    <Content Include="images\12\h1_lselect.gif" />
+    <Content Include="images\12\hl_benefits.gif" />
+    <Content Include="images\12\hl_participation.gif" />
+    <Content Include="images\12\hl_requirements.gif" />
+    <Content Include="images\12\hl_roadto.gif" />
+    <Content Include="images\12\hl_sowhat.gif" />
+    <Content Include="images\1\back_all.gif" />
+    <Content Include="images\1\button1.jpg" />
+    <Content Include="images\1\button1_r.jpg" />
+    <Content Include="images\1\button2.jpg" />
+    <Content Include="images\1\button2_r.jpg" />
+    <Content Include="images\1\button3.jpg" />
+    <Content Include="images\1\button3_r.jpg" />
+    <Content Include="images\1\button4.jpg" />
+    <Content Include="images\1\button4_r.jpg" />
+    <Content Include="images\1\button5.jpg" />
+    <Content Include="images\1\button5_r.jpg" />
+    <Content Include="images\1\comment.gif" />
+    <Content Include="images\1\footer.gif" />
+    <Content Include="images\1\header.jpg" />
+    <Content Include="images\1\menu.gif" />
+    <Content Include="images\1\small.gif" />
+    <Content Include="images\1\timeicon.gif" />
+    <Content Include="images\1\title.gif" />
+    <Content Include="images\2\background_body_grey.gif" />
+    <Content Include="images\2\background_body_white.gif" />
+    <Content Include="images\2\background_layout_1.gif" />
+    <Content Include="images\2\background_layout_2.gif" />
+    <Content Include="images\2\background_layout_3.gif" />
+    <Content Include="images\2\flag_germany.png" />
+    <Content Include="images\2\flag_sweden.png" />
+    <Content Include="images\2\flag_uk.png" />
+    <Content Include="images\2\header.jpg" />
+    <Content Include="images\2\image.jpg" />
+    <Content Include="images\3\arrow.gif" />
+    <Content Include="images\3\body_deg.gif" />
+    <Content Include="images\3\header.jpg" />
+    <Content Include="images\3\ill1.jpg" />
+    <Content Include="images\3\ill2.jpg" />
+    <Content Include="images\3\ill_title.jpg" />
+    <Content Include="images\3\pom_bas.jpg" />
+    <Content Include="images\4\bg.gif" />
+    <Content Include="images\4\comment_edit.gif" />
+    <Content Include="images\4\flickr_shadow.gif" />
+    <Content Include="images\4\flickr_shadow_white.gif" />
+    <Content Include="images\4\gear.png" />
+    <Content Include="images\4\header_bg.gif" />
+    <Content Include="images\4\hero.jpg" />
+    <Content Include="images\5\body_bg.jpg" />
+    <Content Include="images\5\header_home.jpg" />
+    <Content Include="images\5\logo.gif" />
+    <Content Include="images\6\corner.gif" />
+    <Content Include="images\6\corner2.gif" />
+    <Content Include="images\6\front.jpg" />
+    <Content Include="images\6\test.jpg" />
+    <Content Include="images\7\body.jpg" />
+    <Content Include="images\7\content.jpg" />
+    <Content Include="images\7\document.gif" />
+    <Content Include="images\7\header.jpg" />
+    <Content Include="images\7\linkroll.gif" />
+    <Content Include="images\7\linkroll_hover.gif" />
+    <Content Include="images\7\menu.jpg" />
+    <Content Include="images\7\menu_a.jpg" />
+    <Content Include="images\7\menu_a_hover.jpg" />
+    <Content Include="images\7\menu_link.jpg" />
+    <Content Include="images\7\sidebar.jpg" />
+    <Content Include="images\7\top.jpg" />
+    <Content Include="images\8\bg_body.jpg" />
+    <Content Include="images\8\bg_header.jpg" />
+    <Content Include="images\8\comment_bg.gif" />
+    <Content Include="images\8\li_bullet.gif" />
+    <Content Include="images\8\logo_fullahead.gif" />
+    <Content Include="images\8\logo_greenery.gif" />
+    <Content Include="images\8\menu_tab.gif" />
+    <Content Include="images\8\plants.jpg" />
+    <Content Include="images\8\rounded_bl.gif" />
+    <Content Include="images\8\rounded_br.gif" />
+    <Content Include="images\8\rounded_tl.gif" />
+    <Content Include="images\8\rounded_tr.gif" />
+    <Content Include="images\9\arrow.up.gif" />
+    <Content Include="images\9\corner.gif" />
+    <Content Include="images\9\skuteczni.gif" />
+    <Content Include="images\9\top.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Default_MasterSwitch.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\logo.png" />
+    <Content Include="masters\Master1.master" />
+    <Content Include="masters\Master10.master" />
+    <Content Include="masters\Master11.master" />
+    <Content Include="masters\Master12.master" />
+    <Content Include="masters\Master2.master" />
+    <Content Include="masters\Master3.master" />
+    <Content Include="masters\Master4.master" />
+    <Content Include="masters\Master5.master" />
+    <Content Include="masters\Master6.master" />
+    <Content Include="masters\Master7.master" />
+    <Content Include="masters\Master8.master" />
+    <Content Include="masters\Master9.master" />
+    <Content Include="Products.aspx" />
+    <Content Include="scripts\jquery.js" />
+    <Content Include="userControls\ContactUsForm.ascx" />
+    <Content Include="userControls\Menu.ascx" />
+    <Content Include="userControls\ProductList.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\Items.tsv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3563</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8088</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
